@@ -1,16 +1,132 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>Home</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
+<ion-card class="above-header">
+  <ion-row>
+    <ion-col>
+      <p>Today’s Orders</p>
+      <h1>25</h1>
+    </ion-col>
+    <ion-col class="ion-text-end">
+      <p>Today’s Sales</p>
+      <h1>₹2k</h1>
+    </ion-col>
+  </ion-row>
+  <ion-row class="ion-justify-content-center down_arrow"><div class="icon-wrapper" (click)="contentShown = !contentShown" >
+    <ion-img src="/assets/images/down_arrow.png" alt="down_arrow"></ion-img></div></ion-row>
+  
+  <ion-row id="contentShown" *ngIf="contentShown">
+    <ion-col>
+      <p>Monthly Sales</p>
+      <h1>₹800k</h1>
+    </ion-col>
+    <ion-col class="ion-text-end">
+      <p>Total Customers</p>
+      <h1>89</h1>
+    </ion-col>
+  </ion-row>
+</ion-card>
+<ion-content>
+  <ion-card class="sales-card">
+    <ion-row class="align_center chart_heading">
+      <ion-col>
+        <h2>Total Sales</h2>
+      </ion-col>
+      <ion-col class="ion-text-end">
+        <p>September</p>
+      </ion-col>
+    </ion-row>
+    <div #salesChart style="width: 100%; height: 400px;"></div>
+    <ion-row>
+      <ion-col>
+        <ion-segment value="daily">
+          <ion-segment-button value="daily">
+            <ion-label>Daily</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="weekly">
+            <ion-label>Weekly</ion-label>
+          </ion-segment-button>
+          <ion-segment-button value="monthly">
+            <ion-label>Monthly</ion-label>
+          </ion-segment-button>
+        </ion-segment>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  
+  <ion-card class="categories-card">
+    <h2>Best Performing Categories</h2>
+    <ion-row>
+      <ion-col>
+        <ion-item lines="none">
+          <ion-label>Pizza 
+            <p>₹20</p>
+          </ion-label>
+          <ion-img src="/assets/images/pizza.svg"></ion-img>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item lines="none">
+          <ion-label>Burger
+            <p>₹15</p></ion-label>
+          <ion-img src="/assets/images/burger.svg"></ion-img>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item lines="none">
+          <ion-label>Bakery
+            <p>₹30</p></ion-label>
+          <ion-img src="/assets/images/bakery.svg"></ion-img>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item lines="none">
+          <ion-label>Chicken
+            <p>₹50</p></ion-label>
+          <ion-img src="/assets/images/category_logo1.svg"></ion-img>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+  
+  <ion-row>
+    <ion-col>
+      <ion-card class="dishes_card">
+        <ion-row>
+          <ion-col class="dishes_heading">
+            <h2>Popular Dishes</h2>
+          </ion-col>
+          <!-- <ion-col class="ion-text-end align-center"><a href="#">See All</a></ion-col> -->
+        </ion-row>
+        <ion-row class="dish-item">
+          <ion-col size="auto">
+            <ion-img src="/assets/images/food.png" alt="food"></ion-img>
+          </ion-col>
+          <ion-col>
+            <h3>Chicken Parmesan</h3>
+            <p  class="serv_per">Serving: 01 person</p>
+          </ion-col>
+          <ion-col size="auto" class="ion-text-right stock">
+            <h4 class="in-stock">In Stock</h4>
+            <p>55.00</p>
+          </ion-col>
+        </ion-row>
+        
+        <ion-row class="dish-item">
+          <ion-col size="auto">
+            <ion-img src="/assets/images/food.png" alt="food"></ion-img>
+          </ion-col>
+          <ion-col>
+            <h3>Chicken Parmesan</h3>
+            <p class="serv_per">Serving: 01 person</p>
+          </ion-col>
+          <ion-col size="auto" class="ion-text-right stock">
+            <h4 class="in-stock">In Stock</h4>
+            <p>55.00</p>
+          </ion-col>
+        </ion-row>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">home</ion-title>
-    </ion-toolbar>
-  </ion-header>
 </ion-content>

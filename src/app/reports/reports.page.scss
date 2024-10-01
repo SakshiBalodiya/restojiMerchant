@@ -1,10 +1,7 @@
 ion-header {
     background-color: #C72C3C;
-    height: 150px;
-    // display: flex;
-    // align-items: center;
-    // justify-content: space-between;
-    border-radius: 0px 0px 40px 0px;
+    height: 110px;
+
   
     .main {
       display: flex;
@@ -31,3 +28,19 @@ ion-header {
     font-weight: 400;
     margin-left: 10%;
   }
+  .allreport{
+    // margin: 20px 27px;
+    border: 1px solid var(--ion-color-primary);
+    border-radius: 10px;
+    height: 146px;
+    padding: 16px 20px;
+    margin: 8px 10px;
+}
+.revenue_product{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+.revenue_product p{
+    margin: 0px;
+}

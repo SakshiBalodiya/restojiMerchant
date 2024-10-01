@@ -1,21 +1,29 @@
 <ion-tabs>
 
   <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="tab1"class="icon" href="home">
-      <ion-icon name="home" class="selected"></ion-icon>
-      <ion-icon name="home-outline" class="unselected"></ion-icon>
+    <ion-tab-button tab="tab1" class="icon" href="home">
+      <!-- <ion-icon name="home" class="selected"></ion-icon>
+      <ion-icon name="home-outline" class="unselected"></ion-icon> -->
+      <ion-img src="assets/images/home_active_icon.png" class="selected" ></ion-img>
+      <ion-img src="assets/images/home_icon.png"  class="unselected"></ion-img>
+      <ion-label>Home</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="tab2"class="icon" href="">
-      <ion-icon name="bag-remove-outline" class="unselected"></ion-icon>
-      <ion-icon name="bag-remove" class="selected"></ion-icon>
+    <ion-tab-button tab="tab2" class="icon" href="orders">
+      <!-- <ion-icon name="bag-remove-outline" class="unselected"></ion-icon>
+      <ion-icon name="bag-remove" class="selected"></ion-icon> -->
+      <ion-img src="assets/images/order_active_icon.png" class="selected" ></ion-img>
+      <ion-img src="assets/images/order_icon.png"  class="unselected"></ion-img>
+      <ion-label>Orders</ion-label>
     </ion-tab-button>
-    
-    <ion-tab-button tab="contactsupport"class="icon" href="#">
-      <ion-icon name="chatbox-ellipses-outline" class="unselected"></ion-icon>
-      <ion-icon name="chatbox-ellipses" class="selected"></ion-icon>
+
+    <ion-tab-button tab="tab3" class="icon" href="reports">
+      <ion-img src="assets/images/report_active_icon.png" class="selected" ></ion-img>
+      <ion-img src="assets/images/report_icon.png"  class="unselected"></ion-img>
+      <ion-label>Reports</ion-label>
     </ion-tab-button>
 
   </ion-tab-bar>
 
 </ion-tabs>
+

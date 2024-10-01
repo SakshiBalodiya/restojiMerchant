@@ -12,11 +12,14 @@ const routes: Routes = [
         path: 'tab1',
         loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
       },
-      // {
-      //   path: 'tab2',
-      //   loadChildren: () => import('../welcome/welcome.module').then(m => m.WelcomePageModule)
-      // },
-   
+      {
+        path: 'tab2',
+        loadChildren: () => import('../orders/orders.module').then(m => m.OrdersPageModule)
+      },
+      {
+        path: 'tab3',
+        loadChildren: () => import('../reports/reports.module').then(m => m.ReportsPageModule)
+      },
  
       {
         path: '',

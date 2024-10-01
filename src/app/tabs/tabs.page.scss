@@ -1,10 +1,16 @@
 ion-tab-bar{
     height: 65px;
     box-shadow:-1px 1px 20px 10px rgba(156,193,230,255); 
-    --color:#5d5d5d;
-    --color-selected:#174891;
+    --color:#5F6368;
+    --color-selected: var( --ion-color-primary);
     --border:none;
+    font-size: 12px;
+    font-family: 'Poppins';
 
+}
+ion-tab-bar ion-img{
+height: 24px;
+width: 24px;
 }
 .tab-selected .unselected {
     display: none;

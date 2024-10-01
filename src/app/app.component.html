@@ -1,0 +1,44 @@
+<ion-app>
+  <ion-menu contentId="main-content" color="none">
+    <ion-content class="menu_header">
+      <ion-menu-toggle auto-hide="false">
+        <ion-row class="user-info">
+          <ion-col size="2">
+            <img src="assets/images/user.png" alt="user"/>
+          </ion-col>
+          <ion-col class="user-details">
+            <h1>Rakesh Sharma</h1>
+            <p>Store Owner</p>
+          </ion-col>
+        </ion-row>
+        <ion-list>
+          <ion-item class="menu-item selected" lines="none" color="none">
+            <ion-img src="assets/images/home_icon.png"></ion-img>
+            <ion-label>Home</ion-label>
+          </ion-item>
+          <ion-item class="menu-item"  lines="none">
+            <ion-img src="assets/images/menu_icon.png"></ion-img>
+            <ion-label>Manage Menu</ion-label>
+          </ion-item>
+          <ion-item class="menu-item"  lines="none">
+            <ion-img src="assets/images/report_icon.png"></ion-img>
+            <ion-label>Reports</ion-label>
+          </ion-item>
+          <ion-item class="menu-item"  lines="none">
+            <ion-img src="assets/images/order_icon.png"></ion-img>
+            <ion-label>Orders</ion-label>
+          </ion-item>
+          <ion-item class="menu-item"  lines="none">
+            <ion-img src="assets/images/cashier_icon.png"></ion-img>
+            <ion-label>Cashiers</ion-label>
+          </ion-item>
+          <ion-item class="menu-item"  lines="none">
+            <ion-img src="assets/images/setting_icon.png"></ion-img>
+            <ion-label>Settings</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-menu-toggle>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main-content" [animated]="false"></ion-router-outlet>
+</ion-app>

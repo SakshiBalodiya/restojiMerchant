@@ -1,0 +1,88 @@
+.background {
+    --background: url(/assets/images/loginbg.png) 0 0/100% 100% no-repeat;
+  }
+  ion-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 104%;
+    // padding: 0 20px;
+  }
+  ion-input {
+    background-color: #EDEDED;
+    border-radius: 10px;
+    // margin-top: 12px;
+    // margin-bottom: 26px;
+    --highlight-color : none !important;
+    font-size: 18px !important;
+    color: #727272 !important;
+    height: 46px;
+    font-weight: 300;
+    
+  }
+  
+  ::ng-deep input {
+    padding: 0px 18px !important;
+   
+  }
+  
+.custom-div{
+  display: flex;
+  align-items: center;
+  background-color: #EDEDED;
+  // height: 44px;
+  border-radius: 10px;
+  margin-top: 10px;
+  /* width: 100%; */
+
+}
+.custom-div ion-icon{
+margin-left: 10px;
+zoom: 1.4;
+color: #727272;
+}
+.inp-col{
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+}
+.custom-input{
+
+  background: none;
+  align-items: center;
+  display: flex;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+
+}
+ion-card{
+  padding: 0px 14px;
+  box-shadow: 4px 7px 62px 0px rgba(0, 0, 0, 25%);
+  border-radius: 18px;
+  width: 88%;
+}
+.custom-div p{
+  margin-left: 10px;
+  color: #727272 ;
+}
+ion-button {
+  --border-radius: 36px !important;
+  width: 100%;
+  max-width: 169px;
+  text-transform: capitalize;
+  color: var(--ion-color-primary-contrast);
+  min-height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.btn_col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 14px; 
+
+}
+.logo{
+  margin-bottom : 6%;
+}

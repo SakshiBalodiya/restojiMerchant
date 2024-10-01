@@ -1,0 +1,37 @@
+
+<ion-content  [scrollEvents]="true" keyboardResize="none" scroll-y="false" class="background ios overscroll content-ltr hydrated">                                                                                                                                         
+<ion-grid>
+  <ion-row class="logo">
+    <ion-img src="/assets/images/restoji_logo.png" alt="restoji_logo"></ion-img>
+  </ion-row>
+  <ion-card>
+    <ion-col>
+      <form   method="post">
+        <ion-row>
+          <ion-col class="inp-col">
+            <ion-label>Contact Number</ion-label>
+            <div class="custom-div">
+              <p>+91</p>
+              <ion-input autofocus="false" type="text" name="username" placeholder=""></ion-input>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="inp-col">
+            <ion-label>Password</ion-label>
+            <div class="custom-div">
+              <ion-icon  [name]="showPassword ? 'eye' : 'eye-off'" (click)="togglePassword()"></ion-icon>
+              <ion-input type="password" autofocus="false" name="password" class="custom-input" placeholder="" type="{{ showPassword ? 'text' : 'password' }}"></ion-input>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="btn_col">
+            <ion-button type="submit" [routerLink]="['/tabs/tab1']">Login</ion-button>
+          </ion-col>
+        </ion-row>
+      </form>
+    </ion-col>
+  </ion-card>
+</ion-grid>
+</ion-content>

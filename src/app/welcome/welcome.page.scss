@@ -1,0 +1,30 @@
+
+.spacing{
+    padding: 0px 14px;
+}
+ion-button{
+    --border-radius: 4px !important;
+    width: 100%;
+    max-width: 127px;
+    text-transform: capitalize;
+    color: var(--ion-color-primary-contrast);
+    min-height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+// .action-row{
+//  position: absolute;
+//  bottom: 0;
+//  width: 100%;
+// }
+h1{
+    color: #2F2F2F;
+    font-size: 24px;
+    font-weight: 500;
+}
+p{
+    color: #898989;
+    font-size: 16px;
+    font-weight: 400;
+}

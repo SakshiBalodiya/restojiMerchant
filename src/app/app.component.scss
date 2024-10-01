@@ -1,0 +1,28 @@
+h1{
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #263238;
+}
+p{
+  margin: 0px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #263238;
+}
+.user-info{
+margin: 18px 10px;
+display: flex;
+align-items:center;
+}
+ion-label{
+  margin-left: 14px;
+}
+ion-item{
+  height: 58px;
+  display: flex;
+  align-items: center;
+}
+.selected{
+  background-color: rgb(255, 198, 198, 57%);
+}

@@ -1,0 +1,19 @@
+ion-tab-bar{
+    height: 65px;
+    box-shadow:-1px 1px 20px 10px rgba(156,193,230,255); 
+    --color:#5d5d5d;
+    --color-selected:#174891;
+    --border:none;
+
+}
+.tab-selected .unselected {
+    display: none;
+  }
+  
+  .tab-selected .selected {
+    display: initial !important;
+  }
+  
+  .selected {
+    display: none;
+  }

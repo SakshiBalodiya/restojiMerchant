@@ -1,13 +1,54 @@
-<ion-header>
+<ion-header *ngIf="isDashboardPage" class="header_dashboard">
   <div class="main">
     <ion-buttons slot="start" class="menu-btn">
       <ion-menu-button>
         <ion-img src="/assets/images/menu.png" alt="menu"></ion-img>
       </ion-menu-button>
     </ion-buttons>
-    <h1>Dashboard</h1>
+    <ng-container >
+      <h1>{{'Dashboard.dashboard' | translate}}</h1>
+      <ion-img src="/assets/images/design.png" alt="design" class="header-img"></ion-img>
+    </ng-container>
 
 
-    <ion-img src="/assets/images/design.png" alt="design" class="header-img"></ion-img>
+ 
+  </div>
+</ion-header>
+<ion-header  *ngIf="!isDashboardPage" class="header_main">
+  <div class="main">
+    <ion-buttons slot="start" class="menu-btn" *ngIf="currentRoute.includes('/tabs/tab3')">
+      <ion-menu-button>
+        <ion-img src="/assets/images/menu.png" alt="menu"></ion-img>
+      </ion-menu-button>
+    </ion-buttons>
+    <ng-container *ngIf="currentRoute.includes('/tabs/tab3')">
+      <h1>{{'Report.report' | translate}}</h1>
+      <ion-img src="/assets/images/design.png" alt="design" class="header-img"></ion-img>
+    </ng-container>
+
+    <ion-buttons slot="start" class="menu-btn" *ngIf="currentRoute.includes('/tabs/tab2')">
+      <ion-menu-button>
+        <ion-img src="/assets/images/menu.png" alt="menu"></ion-img>
+      </ion-menu-button>
+    </ion-buttons>
+    <ng-container  *ngIf="currentRoute.includes('/tabs/tab2')">
+      <h1>{{'Orders.orders' | translate}}</h1>
+      <ion-img src="/assets/images/design.png" alt="design" class="header-img"></ion-img>
+    </ng-container>
+
+
+ 
+    <ng-container  *ngIf="currentRoute.includes('/sales-report')">
+      <ion-icon name="chevron-back-outline" [routerLink]="['/tabs/tab3']"></ion-icon>
+      <h1>{{'SalesReport.salesreport' | translate}}</h1>
+      <ion-img src="/assets/images/design.png" alt="design" class="header-img"></ion-img>
+    </ng-container>
+
+
+    <ng-container  *ngIf="currentRoute.includes('/cashier-report')">
+      <ion-icon name="chevron-back-outline" [routerLink]="['/tabs/tab3']"></ion-icon>
+      <h1 style="margin-left: 7%;">{{'Cashierreport.cashierreport' | translate}}</h1>
+      <ion-img src="/assets/images/design.png" alt="design" class="header-img"></ion-img>
+    </ng-container>
   </div>
 </ion-header>

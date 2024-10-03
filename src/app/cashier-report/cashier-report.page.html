@@ -1,0 +1,41 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <div id="calendar-row">
+    <ion-col class="date-col ion-text-center" *ngFor="let day of weekDays" (click)="selectDate(day)" [ngClass]="{'selected-date': isDateSelected(day)}">
+      <div class="day-container">
+      <div class="day-header">{{ day | date: 'EEE' }}</div>
+      <div class="day-content">{{ day | date: 'd' }}</div>
+      </div>
+    </ion-col>
+   
+  </div>
+  <div #cashierChart style="width: 100%; height: 400px;"></div>
+  <ion-row>
+    <ion-col>
+      
+    </ion-col>
+  </ion-row>
+  <ion-list>
+    <ion-item>
+      <ion-label>Versha</ion-label>
+      <ion-note slot="end">₹13755</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>Sagar</ion-label>
+      <ion-note slot="end">₹79220</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>Ashok</ion-label>
+      <ion-note slot="end">₹15756</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>Yogita</ion-label>
+      <ion-note slot="end">₹56892</ion-note>
+    </ion-item>
+    <ion-item>
+      <ion-label>Rohan</ion-label>
+      <ion-note slot="end">₹13755</ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>

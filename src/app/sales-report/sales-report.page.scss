@@ -1,0 +1,38 @@
+
+#calendar-row{
+    // padding:0 5px ;
+    display: flex;
+    overflow-x: scroll;
+    margin: 18px 0px;
+   }
+   .date-col{
+    padding: 0px 12px;
+    align-items: center;
+    display: flex;
+    
+   }
+
+   .selected-date {
+    background-color: rgb(244, 167, 157, 49%);
+    border-radius: 30px;
+    height: 86px;
+    align-items: center;
+    display: flex;
+    // padding: 0px 12px;
+}
+:host {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  
+  .highcharts-root {
+    margin-top: 20px;
+  }
+  
+  highcharts-chart {
+    width: 100%;
+    height: 400px;
+  }
+  

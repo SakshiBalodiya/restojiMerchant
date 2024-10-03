@@ -4,18 +4,20 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ReportsPageRoutingModule } from './reports-routing.module';
+import { SalesReportPageRoutingModule } from './sales-report-routing.module';
 
-import { ReportsPage } from './reports.page';
+import { SalesReportPage } from './sales-report.page';
 import { SharedModule } from '../shared/shared.module';
+import { DatePipe } from '@angular/common';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ReportsPageRoutingModule,
+    SalesReportPageRoutingModule,
     SharedModule
   ],
-  declarations: [ReportsPage]
+  declarations: [SalesReportPage],
+  providers: [DatePipe],
 })
-export class ReportsPageModule {}
+export class SalesReportPageModule {}

@@ -1,0 +1,25 @@
+{
+    "Dashboard": {
+        "dashboard" : "Dashboard"
+    },
+    "Report":
+    {
+        "report": "Report"
+    },
+    "Login":
+    {
+        "login": "Login"
+    },
+    "Cashierreport":
+    {
+        "cashierreport": "Cashier Report"
+    },
+    "SalesReport":
+    {
+        "salesreport": "Sales Report"
+    },
+    "Orders":
+    {
+        "orders": "Orders"
+    }
+}

@@ -165,7 +165,7 @@ p {
 color: #263238;
 font-size: 16px;
 font-weight: 500;
-}
+} 
 .in-stock{
   color: #50CD89;
   font-size: 12px;
@@ -175,4 +175,15 @@ font-weight: 500;
   color: #292C2D;
   font-size: 12px;
   font-weight: 400;
+}
+.headings{
+  font-size: 14px;
+  font-weight: 300;
+  color: #292C2D;
+}
+.value{
+  color: #C72C3C;
+  font-size: 25px;
+  font-weight: 500;
+  margin-top: 10px !important;
 }

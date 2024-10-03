@@ -1,27 +1,4 @@
-ion-header {
-    background-color: #C72C3C;
-    height: 110px;
 
-  
-    .main {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      width: 100%;
-    }
-  
-    .menu-btn {
-      margin-left: 10px;
-    }
-  
-    ion-img.header-img {
-    //   height: 98px;
-      width: auto;
-    //   margin-right: 15px;
-      position: relative;
-      top: -10px;
-    }
-  }
   h1{
     color: #FFFFFF;
     font-size: 25px;
@@ -36,11 +13,16 @@ ion-header {
     padding: 16px 20px;
     margin: 8px 10px;
 }
-.revenue_product{
+.report_name{
     display: flex;
     flex-direction: column;
-    margin-top: 16px;
+    margin-top: 30px;
 }
-.revenue_product p{
+.report_name p{
     margin: 0px;
+}
+
+.report_img{
+  display: flex;
+  justify-content: end;
 }

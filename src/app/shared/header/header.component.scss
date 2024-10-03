@@ -1,4 +1,4 @@
-ion-header {
+.header_dashboard {
     background-color: #C72C3C;
     height: 150px;
     // display: flex;
@@ -29,5 +29,39 @@ ion-header {
     color: #FFFFFF;
     font-size: 25px;
     font-weight: 400;
-    margin-left: 10%;
+    margin-left: 12%;
+    margin-top: 10px;
+  }
+  .header_main {
+    background-color: #C72C3C;
+    height: 110px;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+    border-radius: 0px !important;
+
+    
+    .main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+  
+    .menu-btn {
+      margin-left: 10px;
+    }
+  
+    ion-img.header-img {
+    //   height: 98px;
+      width: auto;
+    //   margin-right: 15px;
+      position: relative;
+      top: -10px;
+    }
+  }
+  ion-icon{
+    zoom: 2;
+    color: #fff;
+    margin-left: 6px;
   }

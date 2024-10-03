@@ -1,5 +1,5 @@
 <ion-content>
-<swiper-container>
+<swiper-container #swiper>
   <swiper-slide>
     <ion-row class="image-container">
       <img src="assets/images/slide1.png" class="slide-image" width="100%"/>
@@ -17,7 +17,7 @@
 
       
       <ion-col  class="ion-text-end">
-        <ion-button>Next</ion-button>
+        <ion-button (click)="nextSlide()">Next</ion-button>
       </ion-col>
     </ion-row>
   </swiper-slide>
@@ -36,7 +36,7 @@
         <ion-img src="/assets/images/navigate_second.png"></ion-img>
       </ion-col>
       <ion-col  class="ion-text-end">
-        <ion-button>Next</ion-button>
+        <ion-button  (click)="nextSlide()">Next</ion-button>
       </ion-col>
     </ion-row>
   </swiper-slide>

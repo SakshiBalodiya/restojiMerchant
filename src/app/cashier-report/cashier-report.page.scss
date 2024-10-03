@@ -1,0 +1,22 @@
+
+#calendar-row{
+    // padding:0 5px ;
+    display: flex;
+    overflow-x: scroll;
+    margin: 18px 0px;
+   }
+   .date-col{
+    padding: 0px 12px;
+    align-items: center;
+    display: flex;
+    
+   }
+
+   .selected-date {
+    background-color: rgb(244, 167, 157, 49%);
+    border-radius: 30px;
+    height: 86px;
+    align-items: center;
+    display: flex;
+    // padding: 0px 12px;
+}

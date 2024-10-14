@@ -50,5 +50,41 @@
       <h1 style="margin-left: 7%;">{{'Cashierreport.cashierreport' | translate}}</h1>
       <ion-img src="/assets/images/design.png" alt="design" class="header-img"></ion-img>
     </ng-container>
+    <ng-container  *ngIf="currentRoute.includes('/gst-report')">
+      <ion-icon name="chevron-back-outline" [routerLink]="['/tabs/tab3']"></ion-icon>
+      <h1 style="margin-left: 7%;">{{'GST.gstreport' | translate}}</h1>
+      <ion-img src="/assets/images/design.png" alt="design" class="header-img"></ion-img>
+    </ng-container>
+    <ng-container  *ngIf="currentRoute.includes('/refund-report')">
+    
+      <ion-icon name="chevron-back-outline" [routerLink]="['/tabs/tab3']"></ion-icon>
+      <h1 style="margin-left: 7%;">{{'Refund.refundreport' | translate}}</h1>
+      <ion-img src="/assets/images/design.png" alt="design" class="header-img"></ion-img>
+    </ng-container>
+    <ng-container  *ngIf="currentRoute.includes('/media-report')">
+      <ion-icon name="chevron-back-outline" [routerLink]="['/tabs/tab3']"></ion-icon>
+      <h1 style="margin-left: 7%;">{{'Media.mediareport' | translate}}</h1>
+      <ion-img src="/assets/images/design.png" alt="design" class="header-img"></ion-img>
+    </ng-container>
+    <ng-container  *ngIf="currentRoute.includes('/billtype-report')">
+      <ion-icon name="chevron-back-outline" [routerLink]="['/tabs/tab3']"></ion-icon>
+      <h1 style="margin-left: 6%;">{{'Billtype.billtypereport' | translate}}</h1>
+      <ion-img src="/assets/images/design.png" alt="design" class="header-img"></ion-img>
+    </ng-container>
+    <ng-container  *ngIf="currentRoute.includes('/order-view')">
+      <ion-icon name="chevron-back-outline" [routerLink]="['/tabs/tab3']"></ion-icon>
+      <h1 style="margin-left: 6%;">{{'Order.orderview' | translate}}</h1>
+      <ion-img src="/assets/images/design.png" alt="design" class="header-img"></ion-img>
+    </ng-container>
+    <ng-container  *ngIf="currentRoute.includes('/category')">
+      <ion-icon name="chevron-back-outline" [routerLink]="['/tabs/tab3']"></ion-icon>
+      <h1 style="margin-left: 6%;">{{'Category.managemenu' | translate}}</h1>
+      <ion-img src="/assets/images/design.png" alt="design" class="header-img"></ion-img>
+    </ng-container>
+    <ng-container  *ngIf="currentRoute.includes('/managemenu')">
+      <ion-icon name="chevron-back-outline" [routerLink]="['/tabs/tab3']"></ion-icon>
+      <h1 style="margin-left: 6%;">{{'Category.managemenu' | translate}}</h1>
+      <ion-img src="/assets/images/design.png" alt="design" class="header-img"></ion-img>
+    </ng-container>
   </div>
 </ion-header>

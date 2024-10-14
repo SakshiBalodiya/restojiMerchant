@@ -76,7 +76,13 @@ import Cylinder from 'highcharts/modules/cylinder';
           allowPointSelect: true,
           cursor: 'pointer',
           dataLabels: {
-            enabled: false,
+            enabled: true,
+            useHTML: true,
+            distance: -2  ,
+            formatter: function() {
+              const percentage = this.point?.percentage?.toFixed(1) ?? '0';
+              return `<div style="background-color: #ECEAF8; border-radius: 50%; padding: 18px 8px; text-align: center; display: inline-block; min-width: 40px;"><span style="color: #000;">${percentage}%</span></div>`;
+            },
           },
           showInLegend: true,
 
@@ -112,23 +118,23 @@ import Cylinder from 'highcharts/modules/cylinder';
         data: [
           {
             name: 'Baverages',
-            y: 50
+            y: 30
           },
           {
           name: 'Bakery',
-          y: 50
+          y: 20
           }, 
           {
             name: 'Sea Food',
-            y: 50
+            y: 20
           }, 
           {
             name: 'Burger',
-            y: 50
+            y: 15
           },
           {
             name: 'Pizza',
-            y: 50
+            y: 15
           }
         ]
       },

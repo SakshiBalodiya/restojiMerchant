@@ -1,0 +1,37 @@
+<app-header></app-header>
+<ion-content [fullscreen]="true">
+  <div id="calendar-row">
+    <ion-col class="date-col ion-text-center" *ngFor="let day of weekDays" (click)="selectDate(day)" [ngClass]="{'selected-date': isDateSelected(day)}">
+      <div class="day-container">
+      <div class="day-header">{{ day | date: 'EEE' }}</div>
+      <div class="day-content">{{ day | date: 'd' }}</div>
+      </div>
+    </ion-col> 
+   
+  </div>
+  <ion-row>
+    <div id="gstChart"></div>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      Type
+    </ion-col>
+    <ion-col>
+      Count
+    </ion-col>
+    <ion-col>
+      Amount
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      Delivered
+    </ion-col>
+    <ion-col>
+      10
+    </ion-col>
+    <ion-col>
+      ₹1000
+    </ion-col>
+  </ion-row>
+</ion-content>

@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { OrdersPageRoutingModule } from './orders-routing.module';
+import { RefundReportPageRoutingModule } from './refund-report-routing.module';
 
-import { OrdersPage } from './orders.page';
+import { RefundReportPage } from './refund-report.page';
 import { SharedModule } from '../shared/shared.module';
 import { DatePipe } from '@angular/common';
 @NgModule({
@@ -14,10 +14,10 @@ import { DatePipe } from '@angular/common';
     CommonModule,
     FormsModule,
     IonicModule,
-    OrdersPageRoutingModule,
+    RefundReportPageRoutingModule,
     SharedModule
   ],
-  declarations: [OrdersPage],
+  declarations: [RefundReportPage],
   providers: [DatePipe],
 })
-export class OrdersPageModule {}
+export class RefundReportPageModule {}

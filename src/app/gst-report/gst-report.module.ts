@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { OrdersPageRoutingModule } from './orders-routing.module';
+import { GstReportPageRoutingModule } from './gst-report-routing.module';
 
-import { OrdersPage } from './orders.page';
+import { GstReportPage } from './gst-report.page';
 import { SharedModule } from '../shared/shared.module';
 import { DatePipe } from '@angular/common';
 @NgModule({
@@ -14,10 +14,10 @@ import { DatePipe } from '@angular/common';
     CommonModule,
     FormsModule,
     IonicModule,
-    OrdersPageRoutingModule,
-    SharedModule
+    GstReportPageRoutingModule,
+    SharedModule,
   ],
-  declarations: [OrdersPage],
+  declarations: [GstReportPage],
   providers: [DatePipe],
 })
-export class OrdersPageModule {}
+export class GstReportPageModule {}

@@ -1,5 +1,4 @@
 <app-header></app-header>
-
 <ion-content [fullscreen]="true">
   <div id="calendar-row">
     <ion-col class="date-col ion-text-center" *ngFor="let day of weekDays" (click)="selectDate(day)" [ngClass]="{'selected-date': isDateSelected(day)}">
@@ -11,28 +10,16 @@
    
   </div>
   <ion-row>
-    <div id="salesChart"></div>
+    <div id="gstChart"></div>
   </ion-row>
   <ion-list>
     <ion-item>
-      <ion-label>Baverages</ion-label>
-      <ion-note slot="end">30%</ion-note>
+      <ion-label>GST on Sales</ion-label>
+      <ion-note slot="end">3.8%</ion-note>
     </ion-item>
     <ion-item>
-      <ion-label>Bakery</ion-label>
-      <ion-note slot="end">20%</ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-label>Sea Food</ion-label>
-      <ion-note slot="end">20%</ion-note>
-    </ion-item>
-    <ion-item>
-      <ion-label>Burger</ion-label>
-      <ion-note slot="end">15%</ion-note> 
-    </ion-item>
-    <ion-item>
-      <ion-label>Pizza</ion-label>
-      <ion-note slot="end">15%</ion-note>
+      <ion-label>TotalSales(Incl. of GST)</ion-label>
+      <ion-note slot="end">96.2%</ion-note>
     </ion-item>
   </ion-list>
 </ion-content>

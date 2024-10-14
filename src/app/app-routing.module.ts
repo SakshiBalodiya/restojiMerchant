@@ -35,6 +35,38 @@ const routes: Routes = [
     path: 'cashier-report',
     loadChildren: () => import('./cashier-report/cashier-report.module').then( m => m.CashierReportPageModule)
   },
+  {
+    path: 'gst-report',
+    loadChildren: () => import('./gst-report/gst-report.module').then( m => m.GstReportPageModule)
+  },
+  {
+    path: 'refund-report',
+    loadChildren: () => import('./refund-report/refund-report.module').then( m => m.RefundReportPageModule)
+  },
+  {
+    path: 'media-report',
+    loadChildren: () => import('./media-report/media-report.module').then( m => m.MediaReportPageModule)
+  },
+  {
+    path: 'billtype-report',
+    loadChildren: () => import('./billtype-report/billtype-report.module').then( m => m.BilltypeReportPageModule)
+  },
+  {
+    path: 'order-view',
+    loadChildren: () => import('./order-view/order-view.module').then( m => m.OrderViewPageModule)
+  },
+  {
+    path: 'category',
+    loadChildren: () => import('./category/category.module').then( m => m.CategoryPageModule)
+  },
+  {
+    path: 'managemenu',
+    loadChildren: () => import('./managemenu/managemenu.module').then( m => m.ManagemenuPageModule)
+  },
+  {
+    path: 'add-category',
+    loadChildren: () => import('./add-category/add-category.module').then( m => m.AddCategoryPageModule)
+  },
 
 ];
 

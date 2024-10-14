@@ -1,0 +1,47 @@
+<app-header></app-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row style="display: flex; align-items: center;">
+      <ion-col><h1>Pizzas</h1></ion-col>
+      <ion-col size="auto"><ion-img src="/assets/images/add_icon.png"   [routerLink]="['/add-category']"></ion-img></ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card-content class="dishes_card">
+          <ion-row>
+
+            <!-- <ion-col class="ion-text-end align-center"><a href="#">See All</a></ion-col> -->
+          </ion-row>
+          <ion-row class="dish-item">
+            <ion-col size="auto">
+              <ion-img src="/assets/images/food.png" alt="food"></ion-img>
+            </ion-col>
+            <ion-col>
+              <h3>Chicken Parmesan</h3>
+              <p>55.00</p>
+            </ion-col>
+            <ion-col size="auto" class="ion-text-right stock">
+              <ion-icon name="pencil-outline"></ion-icon>
+     
+            </ion-col>
+          </ion-row>
+          
+          <ion-row class="dish-item">
+            <ion-col size="auto">
+              <ion-img src="/assets/images/food.png" alt="food"></ion-img>
+            </ion-col>
+            <ion-col>
+              <h3>Chicken Parmesan</h3>
+              <p>55.00</p>
+            </ion-col>
+            <ion-col size="auto" class="ion-text-right stock">
+              <ion-icon name="pencil-outline"></ion-icon>
+         
+            </ion-col>
+          </ion-row>
+        </ion-card-content>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

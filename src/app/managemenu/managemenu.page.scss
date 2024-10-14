@@ -1,0 +1,26 @@
+.dish-item {
+    // background-color: var(--ion-color-primary-rgba);
+    border-radius: 8px;
+    padding: 0px !important;
+    margin: 16px 0;
+    align-items: center;
+    border-bottom: 1px solid #C72C3C;
+  }
+
+  .dish-item  ion-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+p {
+  font-size: 14px;
+  margin: 0;
+}
+.dish-item h3{
+    font-size: 12px;
+    font-weight: 500;
+}
+ion-card-content{
+    padding: 0px;
+}

@@ -1,0 +1,32 @@
+.upload-text {
+    color: #ff0000;
+    margin-bottom: 10px;
+  }
+  ion-input{
+    background-color: #EDEDED;
+    border-radius: 10px;
+    // margin-top: 12px;
+    // margin-bottom: 26px;
+    --highlight-color : none !important;
+    font-size: 18px !important;
+    color: #727272 !important;
+    height: 46px;
+    font-weight: 300;
+  }
+  ion-select {
+    background-color: #EDEDED;
+    border-radius: 10px;
+    // margin-top: 12px;
+    // margin-bottom: 26px;
+    --highlight-color : none !important;
+    font-size: 18px !important;
+    color: #727272 !important;
+    height: 46px;
+    font-weight: 300;
+    padding: 0px 18px !important; 
+  }
+    
+  ::ng-deep input {
+    padding: 0px 18px !important;
+   
+  }

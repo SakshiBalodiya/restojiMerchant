@@ -1,31 +1,4 @@
 
-  
-//   .above-header {
-//     position: relative;
-//    top: -10%;
-//     z-index: 10;
-//     background: white;
-//     padding: 0px 16px;
-//     border-radius: 10px;
-//     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-//   }
-//   .icon-wrapper{ 
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     width: 36px;
-//     height: 36px;
-//     border-radius: 50%;
-//     background-color: #ffffff;
-//     box-shadow: 0px 3px 31px rgba(219, 219, 245, 0.65);
-//     margin-right: 10px;
-//     margin-left: 10px;
-//     z-index: 10;
-//     transform: translateX(-50%);
-// }
-// .icon-wrapper ion-icon{
-//     zoom: 1.6;
-// }
 
 ion-content {
     --padding-top: 0;
@@ -35,7 +8,7 @@ ion-content {
   
   .above-header {
     position: relative;
-    top: -42px; /* Adjust to fit your header height */
+    top: -42px;
     left: 0;
     right: 0;
     z-index: 10;
@@ -72,7 +45,7 @@ ion-content {
   }
   
   .categories-card {
-    margin-top: 40px; /* Adjust as necessary */
+    margin-top: 40px;
   }
   
   .dishes_card {

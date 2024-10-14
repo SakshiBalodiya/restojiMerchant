@@ -1,0 +1,28 @@
+
+h1{
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 10%;
+  }
+  .allreport{
+    // margin: 20px 27px;
+    border: 1px solid var(--ion-color-primary);
+    border-radius: 10px;
+    height: 146px;
+    padding: 16px 20px;
+    margin: 8px 10px;
+}
+.report_name{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.report_name p{
+    margin: 0px;
+}
+
+.report_img{
+  display: flex;
+  justify-content: end;
+}

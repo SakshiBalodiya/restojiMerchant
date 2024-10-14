@@ -20,6 +20,27 @@
     },
     "Orders":
     {
-        "orders": "Orders"
+        "orders": "Orders",
+        "orderview": "Order View"
+    },
+    "GST":
+    {
+        "gstreport": "GST Report"
+    },
+    "Refund":
+    {
+        "refundreport": "Refund Report"
+    }
+    ,
+    "Media": {
+        "mediareport": "Media Report"
+    },
+    "Billtype":
+    {
+        "billtypereport": "Bill Type Report"
+    },
+    "Category":
+    {
+        "managemenu": "Manage Menu"
     }
 }

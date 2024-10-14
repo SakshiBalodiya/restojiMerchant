@@ -1,60 +1,59 @@
-
 <app-header></app-header>
-<ion-content>
+
+<ion-content [fullscreen]="true">
   
   <ion-row>
-    <ion-col class="allreport" [routerLink]="['/sales-report']">
+    <ion-col class="allreport" [routerLink]="['/managemenu']">
       <ion-row class="report_img">
-        <ion-img src="/assets/images/sales_report.png" alt="Sales Report"></ion-img>
+        <ion-img src="/assets/images/pizza.svg"></ion-img>
       </ion-row>
       <ion-row class="report_name">
-          <p>Sales Report</p>
+          <p>Pizza</p>
       </ion-row>
     </ion-col>
-    <ion-col class="allreport" [routerLink]="['/cashier-report']">
+    <ion-col class="allreport" [routerLink]="['/managemenu']">
       <ion-row class="report_img">
-        <ion-img src="/assets/images/cashier_report.png" alt="Sales Report"></ion-img>
+        <ion-img src="/assets/images/bakery.svg"></ion-img>
       </ion-row>
       <ion-row class="report_name">
-          <p>Cashier Report</p>
-      </ion-row>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col class="allreport" [routerLink]="['/gst-report']">
-      <ion-row class="report_img">
-        <ion-img src="/assets/images/gst_report.png" alt="Sales Report"></ion-img>
-      </ion-row>
-      <ion-row class="report_name">
-         <p>GST Report</p>
-      </ion-row>
-    </ion-col>
-    <ion-col class="allreport" [routerLink]="['/refund-report']">
-      <ion-row class="report_img">
-        <ion-img src="/assets/images/refund_report.png" alt="Sales Report"></ion-img>
-      </ion-row>
-      <ion-row class="report_name">
-          <p>Refund Report</p>
+          <p>Burger</p>
       </ion-row>
     </ion-col>
   </ion-row>
   <ion-row>
-    <ion-col class="allreport" [routerLink]="['/media-report']">
+    <ion-col class="allreport" [routerLink]="['/managemenu']">
+      <ion-row class="report_img">
+        <ion-img src="/assets/images/bakery.svg"></ion-img>
+      </ion-row>
+      <ion-row class="report_name">
+         <p>Chicken</p>
+      </ion-row>
+    </ion-col>
+    <ion-col class="allreport" [routerLink]="['/managemenu']">
+      <ion-row class="report_img">
+        <ion-img src="/assets/images/bakery.svg"></ion-img>
+      </ion-row>
+      <ion-row class="report_name">
+          <p>Bakery</p>
+      </ion-row>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col class="allreport" [routerLink]="['/managemenu']">
       <ion-row class="report_img">
         <ion-img src="/assets/images/media_report.png" alt="Sales Report"></ion-img>
       </ion-row>
       <ion-row class="report_name">
-        <p>Media Report</p>
+        <p>Sea Food</p>
       </ion-row>
     </ion-col>
-    <ion-col class="allreport"  [routerLink]="['/billtype-report']">
+    <ion-col class="allreport"  [routerLink]="['/managemenu']">
       <ion-row class="report_img" >
         <ion-img src="/assets/images/bill_report.png" alt="Sales Report"></ion-img>
       </ion-row>
       <ion-row class="report_name">
-          <p>Bill Type Report</p>
+          <p>Beverage</p>
       </ion-row>
     </ion-col>
   </ion-row>
-  
-</ion-content>
+  </ion-content>

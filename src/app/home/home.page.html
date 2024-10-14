@@ -37,17 +37,13 @@
     <div #salesChart style="width: 100%; height: 400px;"></div>
     <ion-row>
       <ion-col>
-        <ion-segment value="daily">
-          <ion-segment-button value="daily">
-            <ion-label>Daily</ion-label>
-          </ion-segment-button>
-          <ion-segment-button value="weekly">
-            <ion-label>Weekly</ion-label>
-          </ion-segment-button>
-          <ion-segment-button value="monthly">
-            <ion-label>Monthly</ion-label>
-          </ion-segment-button>
-        </ion-segment>
+        <ion-checkbox labelPlacement="end">Daily</ion-checkbox>
+      </ion-col>
+      <ion-col>
+        <ion-checkbox labelPlacement="end">Weekly</ion-checkbox>
+      </ion-col>
+      <ion-col>
+        <ion-checkbox labelPlacement="end">Monthly</ion-checkbox>
       </ion-col>
     </ion-row>
   </ion-card>

@@ -1,13 +1,61 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>orders</ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">orders</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div id="calendar-row">
+    <ion-col class="date-col ion-text-center" *ngFor="let day of weekDays" (click)="selectDate(day)" [ngClass]="{'selected-date': isDateSelected(day)}">
+      <div class="day-container">
+      <div class="day-header">{{ day | date: 'EEE' }}</div>
+      <div class="day-content">{{ day | date: 'd' }}</div>
+      </div>
+    </ion-col>
+   
+  </div>
+  <ion-row>
+    <ion-searchbar placeholder="Search by order no."></ion-searchbar>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-checkbox labelPlacement="end">All</ion-checkbox>
+    </ion-col>
+    <ion-col>
+      <ion-checkbox labelPlacement="end">Cash</ion-checkbox>
+    </ion-col>
+    <ion-col>
+      <ion-checkbox labelPlacement="end">Card</ion-checkbox>
+    </ion-col>
+    <ion-col>
+      <ion-checkbox labelPlacement="end">UPI/Online</ion-checkbox>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-card-content class="dishes_card">
+        <ion-row>
+          <ion-col class="dishes_heading">
+            <h2>Popular Dishes</h2>
+          </ion-col>
+        </ion-row>
+        <ion-row class="dish-item" [routerLink]="['/order-view']">
+          <ion-col>
+            <h3>#09232644</h3>
+            <p class="serv_per">500%</p>
+          </ion-col>
+          <ion-col size="auto" class="ion-text-right stock">
+            <ion-img src="/assets/images/search.png" alt="search"></ion-img>
+            <p>55.00</p>
+          </ion-col>
+        </ion-row>
+        <ion-row class="dish-item" [routerLink]="['/order-view']">
+          <ion-col>
+            <h3>#09232644</h3>
+            <p class="serv_per">500%</p>
+          </ion-col>
+          <ion-col size="auto" class="ion-text-right stock">
+            <ion-img src="/assets/images/search.png" alt="search"></ion-img>
+            <p>55.00</p>
+          </ion-col>
+        </ion-row>
+      </ion-card-content>
+    </ion-col>
+  </ion-row>
 </ion-content>

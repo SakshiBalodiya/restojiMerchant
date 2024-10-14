@@ -4,20 +4,18 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { OrdersPageRoutingModule } from './orders-routing.module';
+import { ManagemenuPageRoutingModule } from './managemenu-routing.module';
 
-import { OrdersPage } from './orders.page';
+import { ManagemenuPage } from './managemenu.page';
 import { SharedModule } from '../shared/shared.module';
-import { DatePipe } from '@angular/common';
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    OrdersPageRoutingModule,
+    ManagemenuPageRoutingModule,
     SharedModule
   ],
-  declarations: [OrdersPage],
-  providers: [DatePipe],
+  declarations: [ManagemenuPage]
 })
-export class OrdersPageModule {}
+export class ManagemenuPageModule {}

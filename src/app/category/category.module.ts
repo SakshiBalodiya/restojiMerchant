@@ -4,20 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { OrdersPageRoutingModule } from './orders-routing.module';
+import { CategoryPageRoutingModule } from './category-routing.module';
 
-import { OrdersPage } from './orders.page';
+import { CategoryPage } from './category.page';
 import { SharedModule } from '../shared/shared.module';
-import { DatePipe } from '@angular/common';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    OrdersPageRoutingModule,
-    SharedModule
+    CategoryPageRoutingModule,
+    SharedModule,
   ],
-  declarations: [OrdersPage],
-  providers: [DatePipe],
+  declarations: [CategoryPage]
 })
-export class OrdersPageModule {}
+export class CategoryPageModule {}
